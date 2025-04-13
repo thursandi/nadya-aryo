@@ -76,13 +76,22 @@
   <div class="footer">
     Terima kasih atas doa dan restunya.
   </div>
+  
   <!-- Lagu latar -->
   <audio id="bg-music" loop>
     <source src="lagu-pernikahan.mp3" type="audio/mpeg">
-    Your browser does not support the audio element.
   </audio>
 
-  <button onclick="document.getElementById('bg-music').play()" style="position:fixed;bottom:10px;right:10px;z-index:999;">🔊 Play</button>
+<button onclick="playMusicFrom(17)" style="position:fixed;bottom:10px;right:10px;z-index:999;">🔊 Musik</button>
+
+<script>
+  function playMusicFrom(startTime) {
+    const audio = document.getElementById('bg-music');
+    audio.currentTime = startTime;
+    audio.play();
+  }
+</script>
+
 
 </body>
 </html>
