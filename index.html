@@ -76,11 +76,13 @@
   <div class="footer">
     Terima kasih atas doa dan restunya.
   </div>
-<!-- Lagu latar -->
-<audio autoplay loop>
-  <source src="lagu-pernikahan.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+  <!-- Lagu latar -->
+  <audio id="bg-music" loop>
+    <source src="lagu-pernikahan.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <button onclick="document.getElementById('bg-music').play()" style="position:fixed;bottom:10px;right:10px;z-index:999;">🔊 Play</button>
 
 </body>
 </html>
