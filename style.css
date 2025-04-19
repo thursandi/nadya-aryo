@@ -2,7 +2,7 @@
 #btn-popup {
   position: fixed;
   bottom: 70px;
-  right: 10px;
+  left: 10px;
   z-index: 999;
   padding: 10px 16px;
   border-radius: 999px;
