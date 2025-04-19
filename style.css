@@ -1,0 +1,70 @@
+/* Tombol fixed */
+#btn-popup {
+  position: fixed;
+  bottom: 70px;
+  right: 10px;
+  z-index: 999;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background-color: #a0522d;
+  color: white;
+  border: none;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  font-size: 14px;
+  opacity: 0;
+  animation: fadeIn 1.5s ease-in-out forwards;
+  animation-delay: 1s;
+}
+
+/* Popup overlay */
+.popup-overlay {
+  display: none;
+  position: fixed;
+  top: 0; left: 0;
+  width: 100%; height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 1000;
+  animation: fadeIn 0.3s ease;
+}
+
+/* Popup box */
+.popup-box {
+  background-color: #fff8f0;
+  padding: 30px;
+  border-radius: 15px;
+  max-width: 400px;
+  margin: 100px auto;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+  animation: scaleFadeIn 0.3s ease;
+}
+
+/* Rekening box */
+.rekening-box {
+  background: #fff;
+  padding: 10px;
+  border-radius: 10px;
+  border: 1px solid #ccc;
+  font-family: monospace;
+  margin-top: 10px;
+}
+
+/* Tombol tutup */
+.btn-tutup {
+  margin-top: 20px;
+  background-color: #a0522d;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 8px;
+}
+
+/* Animasi */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to   { opacity: 1; }
+}
+
+@keyframes scaleFadeIn {
+  from { transform: scale(0.95); opacity: 0; }
+  to   { transform: scale(1); opacity: 1; }
+}
