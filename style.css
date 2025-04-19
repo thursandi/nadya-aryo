@@ -1,4 +1,4 @@
-/* Tombol fixed */
+/* Tombol Kirim Hadiah */
 #btn-popup {
   position: fixed;
   bottom: 70px;
@@ -14,6 +14,21 @@
   opacity: 0;
   animation: fadeIn 1.5s ease-in-out forwards;
   animation-delay: 1s;
+}
+
+/* Tombol Musik */
+#btn-music {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 999;
+  padding: 10px 16px;
+  border-radius: 999px;
+  background-color: #a0522d;
+  color: white;
+  border: none;
+  font-size: 14px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
 /* Popup overlay */
@@ -48,7 +63,7 @@
   margin-top: 10px;
 }
 
-/* Tombol tutup */
+/* Tombol tutup popup */
 .btn-tutup {
   margin-top: 20px;
   background-color: #a0522d;
@@ -67,4 +82,23 @@
 @keyframes scaleFadeIn {
   from { transform: scale(0.95); opacity: 0; }
   to   { transform: scale(1); opacity: 1; }
+}
+
+/* RESPONSIF MOBILE */
+@media (max-width: 600px) {
+  #btn-popup,
+  #btn-music {
+    padding: 8px 12px;
+    font-size: 12px;
+    bottom: 60px;
+  }
+
+  #btn-music {
+    bottom: 10px;
+  }
+}
+
+/* Tambahkan ruang bawah agar konten tidak ketutup tombol */
+body {
+  padding-bottom: 120px;
 }
