@@ -90,7 +90,9 @@
   
   function toggleMusic(startTime) {
     const audio = document.getElementById('bg-music');
-    audio.currentTime = startTime;
+    const button = document.getElementById('btn-music');
+    
+    currentTime = startTime
 
     if (isPlaying) {
       audio.pause();
