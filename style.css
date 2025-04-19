@@ -8,6 +8,12 @@
   z-index: 0;
 }
 
+.content {
+  position: relative;
+  z-index: 1;
+}
+
+
 /* Tombol Kirim Hadiah */
 #btn-popup {
   position: fixed;
