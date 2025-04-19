@@ -87,17 +87,20 @@
 
 <script>
   let isPlaying = false;
+  let isFirstPlay = true;
   
   function toggleMusic(startTime) {
     const audio = document.getElementById('bg-music');
     const button = document.getElementById('btn-music');
     
-    currentTime = startTime
-
     if (isPlaying) {
       audio.pause();
       button.innerHTML = '🔊 Play';
     } else {
+      if (isFirstPlay) {
+        audio.currentTime = startTime; // Set waktu mulai dari detik ke-17 hanya pada play pertama
+        isFirstPlay = false; // Setel menjadi false setelah play pertama
+      }
       audio.play();
       button.innerHTML = '❌ Pause';
     }
