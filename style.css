@@ -101,14 +101,18 @@
   #btn-music {
     bottom: 10px;
   }
+
+  body {
+    background-size: 120px; /* Diperkecil di HP */
+  }
 }
 
 
 body {
   padding-bottom: 120px;
-  background: 
-    linear-gradient(rgba(255,248,240,0.92), rgba(255,248,240,0.92)),
-    url('songket.png');
-  background-size: cover;
+  background-image: url('songket.png');
+  background-color: #fff8f0; /* fallback warna dasar */
+  background-repeat: repeat;
+  background-size: 200px; /* Ukuran motif */
   background-attachment: fixed;
 }
