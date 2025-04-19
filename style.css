@@ -106,4 +106,9 @@
 /* Tambahkan ruang bawah agar konten tidak ketutup tombol */
 body {
   padding-bottom: 120px;
+  background: 
+    linear-gradient(rgba(255,248,240,0.92), rgba(255,248,240,0.92)),
+    url('assets/rumah_gadang.jpg');
+  background-size: cover;
+  background-attachment: fixed;
 }
