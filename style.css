@@ -87,6 +87,8 @@
 /* RESPONSIF MOBILE */
 @media (max-width: 600px) {
   #btn-popup{
+    padding: 8px 12px;
+    font-size: 12px;
     bottom: 10px;
   }
   
