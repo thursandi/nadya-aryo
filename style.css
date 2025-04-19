@@ -119,7 +119,7 @@
   }
 
   body {
-    background-size: 120px; /* Diperkecil di HP */
+    background-size: 360px; /* Diperkecil di HP */
   }
 }
 
@@ -129,6 +129,6 @@ body {
   background-image: url('songket.png');
   background-color: #fff8f0; /* fallback warna dasar */
   background-repeat: repeat;
-  background-size: 200px; /* Ukuran motif */
+  background-size: 600px; /* Ukuran motif */
   background-attachment: fixed;
 }
