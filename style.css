@@ -130,5 +130,5 @@ body {
   background-color: #fff8f0; /* fallback warna dasar */
   background-repeat: repeat;
   background-size: 600px; /* Ukuran motif */
-  background-attachment: fixed;
+  background-attachment: scroll;
 }
