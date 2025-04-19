@@ -86,6 +86,8 @@
 <button onclick="toggleMusic(17)" id="btn-music">🔊 Play</button>
 
 <script>
+  let isPlaying = false;
+  
   function toggleMusic(startTime) {
     const audio = document.getElementById('bg-music');
     audio.currentTime = startTime;
