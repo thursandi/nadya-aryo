@@ -93,6 +93,32 @@
   }
 </script>
 
+<!-- Tombol Buka Popup -->
+<button onclick="openPopup()" style="padding: 10px 20px; border-radius: 10px; background-color: #a0522d; color: white; border: none;">
+  💌 Kirim Hadiah
+</button>
+
+<!-- Popup -->
+<div id="rekeningPopup" style="display:none; position:fixed; top:0; left:0; width:100%; height:100%; background-color:rgba(0,0,0,0.5); z-index:999;">
+  <div style="background-color:#fff8f0; padding:30px; border-radius:15px; max-width:400px; margin:100px auto; box-shadow:0 10px 30px rgba(0,0,0,0.2); position:relative;">
+    <h2 style="color:#a0522d; font-family:'Georgia', serif;">Kado Pernikahan</h2>
+    <p style="font-size: 16px;">Bagi yang ingin memberikan hadiah, dapat dikirim melalui rekening berikut:</p>
+    <div style="background:#fff; padding:10px; border-radius:10px; border:1px solid #ccc; font-family:monospace; margin-top:10px;">
+      BCA 1234567890 <br> a.n. Nadya & Aryo
+    </div>
+    <button onclick="closePopup()" style="margin-top:20px; background-color:#a0522d; color:white; border:none; padding:8px 16px; border-radius:8px;">Tutup</button>
+  </div>
+</div>
+
+<!-- Script -->
+<script>
+  function openPopup() {
+    document.getElementById('rekeningPopup').style.display = 'block';
+  }
+  function closePopup() {
+    document.getElementById('rekeningPopup').style.display = 'none';
+  }
+</script>
 
 </body>
 </html>
