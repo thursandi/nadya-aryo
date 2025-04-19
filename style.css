@@ -103,12 +103,12 @@
   }
 }
 
-/* Tambahkan ruang bawah agar konten tidak ketutup tombol */
+
 body {
   padding-bottom: 120px;
   background: 
     linear-gradient(rgba(255,248,240,0.92), rgba(255,248,240,0.92)),
-    url('rumah_gadang.png');
+    url('songket.png');
   background-size: cover;
   background-attachment: fixed;
 }
