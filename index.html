@@ -83,13 +83,21 @@
     <source src="lagu-pernikahan.mp3" type="audio/mpeg">
   </audio>
 
-<button onclick="playMusicFrom(17)" id="btn-music">🔊 Play</button>
+<button onclick="toggleMusic(17)" id="btn-music">🔊 Play</button>
 
 <script>
-  function playMusicFrom(startTime) {
+  function toggleMusic(startTime) {
     const audio = document.getElementById('bg-music');
     audio.currentTime = startTime;
-    audio.play();
+
+    if (isPlaying) {
+      audio.pause();
+      button.innerHTML = '🔊 Play';
+    } else {
+      audio.play();
+      button.innerHTML = '❌ Pause';
+    }
+    isPlaying = !isPlaying;
   }
 </script>
 
